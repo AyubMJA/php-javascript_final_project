@@ -1,0 +1,22 @@
+{
+  "name": "something",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayubali9996/php-javascript_final_project.git"
+  },
+  "author": "Ayub Ali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayubali9996/php-javascript_final_project/issues"
+  },
+  "homepage": "https://github.com/ayubali9996/php-javascript_final_project#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

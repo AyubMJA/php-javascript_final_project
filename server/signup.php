@@ -18,4 +18,12 @@ if(isset($_POST['signup'])){
     $password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_SPECIAL_CHARS);
 
 
+    if(($firstName !== NULL && $lastName !== NULL) && 
+    ($userName !== NULL && $email !== Null && $password !== Null)){
+
+        $command = "SELECT * from users WHERE userName = $userName or email = $email LIMIT 1";
+        $stmt= $dbh->prepare($command);
+        
+
+    }
 }
