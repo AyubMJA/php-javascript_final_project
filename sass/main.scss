@@ -1,5 +1,6 @@
-*{
-    margin:0px;
-    padding:0px;
-    box-sizing: border-box;
-}
+//base imports
+@import "base/base";
+@import  "base/typography";
+
+// layout imports
+@import "layout/header";

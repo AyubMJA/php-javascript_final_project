@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -25,64 +26,16 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <!-- Sign up Form -->
-            <div class="col">
-                <h1>Sign up</h1>
-                <form method="POST">
-                    <div class="form-group">
-                        <label for="firstName">First Name</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="First Name">
-
-                    </div>
-                    <div class="form-group">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="Last Name">
-
-                    </div>
-
-                    <div class="form-group">
-                        <label for="userName">UserName</label>
-                        <input type="text" class="form-control" id="userName" placeholder="User Name">
-
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailhelp"
-                            placeholder="Email">
-                        <small id="emailhelp" class="form-text text-muted">We'll most definally share your info with the
-                            Russian "Привет Путин".</small>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="password">
-                    </div>
-                    <button type="submit" class="btn btn-primary" name="signup">Sign up</button>
-                </form>
-
-            </div>
-            <!-- Login Form -->
-            <div class="col">
-                <h1>Log in</h1>
-                <form method="POST">
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" class="form-control" id="email" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="password">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Log in</button>
-                    <button type="submit" class="btn btn-light" style="color:blue">Forgot my pasword</button>
-                </form>
-            </div>
-
-
+    <header class="header">
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">One</span>
+                <span class="heading-primary--sub">For All</span>
+            </h1>
+            <a href="#" class="btn btn--white btn-animated">Log in</a>
         </div>
-    </div>
+    </header>
+    
 </body>
 
 </html>
