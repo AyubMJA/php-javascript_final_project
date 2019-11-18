@@ -10,7 +10,7 @@ window.addEventListener("load", function () {
         let password = document.getElementById('password').value;
 
         let url = "server/Signup.php";
-        let params = "firstName=" + firstName + "&lastName=" + lastName + "&email=" + email + "&password" + password;
+        let params = "firstName=" + firstName + "&lastName=" + lastName + "&email=" + email + "&password=" + password;
 
         console.log(params);
 
@@ -24,7 +24,9 @@ window.addEventListener("load", function () {
         .then(success)
     });
 
+
     function success(text){
-        console.log('Hello')
+        console.log('Hello');
+        window.location = "home.html";
     }
 });

@@ -14,7 +14,7 @@ $password = filter_input(INPUT_POST,"password",FILTER_SANITIZE_STRING);
 
 
 if(($firstName !== NULL && $lastName !== NULL) && ($email !== NULL && $password !== NULL)){
-    $command = "INSERT INTO users (firstName,lastName,email,password) VALUES (?,?,?,?)";
+    $command = "INSERT INTO users (firstName,lastName,email,pass) VALUES (?,?,?,?)";
     $stmt = $dbh->prepare($command);
     $params = [$firstName,$lastName,$email,$password];
 
